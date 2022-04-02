@@ -1,14 +1,14 @@
-# bhardwaj's current zshrc file
+# bhardwaj's zshrc
+
 # Lines configured by zsh-newuser-install
 setopt beep
-
 # End of lines configured by zsh-newuser-install
 
 # lines added by me
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "	
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "	
 
 
 export EDITOR=nano
@@ -29,10 +29,11 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+
 #programs to open on startup
 neofetch
 
 # Load zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
-## the end
+# the end
